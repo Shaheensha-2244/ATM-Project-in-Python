@@ -66,8 +66,8 @@ while status:
             print("Balance  ₦",balance)
             Deposit=float(input("Enter deposit amount ₦ "))
             if Deposit>0:
-                forewardbalance=(balance+Deposit)
-                print("Forewardbalance  ₦ ",forewardbalance)
+                remainingbalance=(balance+Deposit)
+                print("Remainingbalance  ₦ ",remainingbalance)
                 follow_up = print("Do You want to perform another transaction Yes(y)/ No(n)")
                 trigger_status = input("Enter response ")
                 trigger_status = trigger_status.upper()
