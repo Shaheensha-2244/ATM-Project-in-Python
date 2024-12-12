@@ -15,8 +15,8 @@ while status:
         print(" What would you like to do ")
         print("""
         1)        Balance
-        2)        Withdraw
-        3)        Deposit
+        2)        Deposit
+        3)        Withdraw
         4)        Quit
 
 
@@ -40,7 +40,7 @@ while status:
             if (Withdraw < balance):
                 if Withdraw>0:
                     forewardbalance=(balance-Withdraw)
-                    print("Foreward Balance  ₦",forewardbalance)
+                    print("Remaining Balance  ₦",remainingbalance)
                     follow_up = print("Do You want to perform another transaction Yes(y)/ No(n)")
                     trigger_status = input("Enter response ")
                     trigger_status = trigger_status.upper()
