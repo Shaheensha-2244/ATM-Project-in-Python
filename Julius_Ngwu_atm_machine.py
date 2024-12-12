@@ -2,14 +2,14 @@
 balance = 10000.00
 
 # User 4 digit pin
-pin = 1234
+pin = 12345
 
 # The application status
 status = True
 
-print("Welcome to GTBank")
+print("Welcome to Union Bank")
 while status:
-    user_pin = int(input("Please Enter Your 4 Digit Pin "))
+    user_pin = int(input("Please Enter Your 5 Digit Pin "))
 
     if user_pin == pin:
         print(" What would you like to do ")
