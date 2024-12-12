@@ -1,5 +1,5 @@
 # User account balance
-balance = 10000.00
+balance = 20000.00
 
 # User 4 digit pin
 pin = 12345
@@ -7,7 +7,7 @@ pin = 12345
 # The application status
 status = True
 
-print("Welcome to Union Bank")
+print("Welcome to Union Bank Of India")
 while status:
     user_pin = int(input("Please Enter Your 5 Digit Pin "))
 
