@@ -15,8 +15,8 @@ while status:
         print(" What would you like to do ")
         print("""
         1)        Balance
-        2)        Deposit
-        3)        Withdraw
+        2)        Withdraw
+        3)        Deposit
         4)        Quit
 
 
@@ -36,10 +36,10 @@ while status:
 # User wants to withdraw cash
         if Option==2:
             print("Balance  ₦",balance)
-            Deposit=float(input("Enter Deposit amount ₦ "))
-            if (Deposit < balance):
-                if Deposit>0:
-                    remainingbalance=(balance-Deposit)
+            Withdraw=float(input("Enter Withdraw amount ₦ "))
+            if (Withdraw < balance):
+                if Withdraw>0:
+                    remainingbalance=(balance-Withdraw)
                     print("Remaining Balance  ₦",remainingbalance)
                     follow_up = print("Do You want to perform another transaction Yes(y)/ No(n)")
                     trigger_status = input("Enter response ")
@@ -48,10 +48,10 @@ while status:
                     if trigger_status == 'N':
                         status = False
                     
-                elif Deposit>balance:
+                elif Withdraw>balance:
                     print("No funs in account")
                 else:
-                    print("None  made")
+                    print("None withdraw made")
             else:
                 print("Insufficient balance")
                 follow_up = print("Do You want to perform another transaction Yes(y)/ No(n)")
@@ -64,9 +64,9 @@ while status:
 # User wants to deposit cash
         if Option==3:
             print("Balance  ₦",balance)
-            Withdraw=float(input("Enter withdraw amount ₦ "))
-            if Withdraw>0:
-                remainingbalance=(balance+Withdraw)
+            Deposit=float(input("Enter deposit amount ₦ "))
+            if Deposit>0:
+                remainingbalance=(balance+Deposit)
                 print("Remainingbalance  ₦ ",remainingbalance)
                 follow_up = print("Do You want to perform another transaction Yes(y)/ No(n)")
                 trigger_status = input("Enter response ")
@@ -75,7 +75,7 @@ while status:
                 if trigger_status == 'N':
                     status = False
             else:
-                print("None withdarw made")
+                print("None deposit made")
 
 # User wants to exit 
         if Option==4:
